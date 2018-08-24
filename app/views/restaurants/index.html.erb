@@ -1,6 +1,6 @@
 <!-- <p id="notice"><%= notice %></p> -->
 <div class="jumbotron">
-  <h2>Yelpdemo is the best way to find reviews on local restaurants.</h2>
+  <h2>YesBrands is the best way to find reviews on local restaurants.</h2>
   <h3>Explore the favorite diners, party halls and eaterries in your community.<br>
   Leave reviews and rattings for your fellow foodies.</h3>
 </div>
@@ -21,7 +21,7 @@
         <td><%= restaurant.name %></td>
         <td><%= restaurant.address %></td>
         <td><%= restaurant.phone %></td>
-        <td><%= restaurant.weblink %></td>
+        <td><%= link_to restaurant.weblink, restaurant.weblink %></td>
         <td><%= link_to 'Show', restaurant, class: "btn btn-link" %></td>
         <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-link" %></td>
         <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
