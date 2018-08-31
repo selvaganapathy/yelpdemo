@@ -11,10 +11,7 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= form.label :rating %>
-    <%= form.number_field :rating, class: "form-control" %>
-  </div>
+  <div class="star-rating"></div>
 
   <div class="form-group">
     <%= form.label :comment %>
@@ -25,3 +22,10 @@
     <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>
+
+<script>
+  $('.star-rating').raty({
+    path: 'https://s3.amazonaws.com/yelp-demo-rails/app-icons',
+    scoreName: 'review[rating]'
+  });
+</script>
