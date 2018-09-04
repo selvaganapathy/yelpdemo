@@ -6,7 +6,7 @@ class Restaurant < ApplicationRecord
 	validates :phone, format: {with: /\A\(\+\d{2}\) \d{10}\z/, 
 		message: "must be in the format (+91) 9876543210"
 	}
-	validates :phone, format: {with: /\Ahttps?\:\/\/.*\z/, 
+	validates :weblink, format: {with: /\Ahttps?\:\/\/.*\z/, 
 		message: "must start with http:// or https://"
 	}
 end
